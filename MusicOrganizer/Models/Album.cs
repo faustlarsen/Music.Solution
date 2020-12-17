@@ -29,5 +29,9 @@ namespace MusicOrganizer.Models
             _instances.Clear();
         }
     
+        public static Album Find(int findId)
+        {
+            return _instances[findId - 1];
+        }
     }
 }
