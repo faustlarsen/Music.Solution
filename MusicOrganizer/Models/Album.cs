@@ -11,7 +11,7 @@ namespace MusicOrganizer.Models
         private static List<Album> _instances = new List<Album> { };
 
         public Album(string albumName, string artist, string genre)
-        {
+        { 
             AlbumName = albumName;
             Artist = artist;
             Genre = genre;

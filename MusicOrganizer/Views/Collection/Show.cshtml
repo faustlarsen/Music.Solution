@@ -1,0 +1,10 @@
+@using MusicOrganizer.Models;
+
+<h1>Your CD Collection</h1>
+
+<ul>
+  @foreach (Album album in @Model["album"])
+  {
+    <a href='/collection/@Model["collection"].Id/album/@album.Id'>@album.AlbumName</a>
+  }
+</ul>

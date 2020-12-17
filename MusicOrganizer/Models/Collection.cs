@@ -31,5 +31,10 @@ namespace MusicOrganizer.Models
         {
             return _instances[findId - 1];
         }
+
+        public void AddAlbum(Album album)
+        {
+            Album.Add(album);
+        }
     }
 }
