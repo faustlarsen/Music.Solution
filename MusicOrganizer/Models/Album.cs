@@ -14,7 +14,19 @@ namespace MusicOrganizer.Models
         {
             AlbumName = albumName;
             Artist = artist;
-            
+            Genre = genre;
+            _instances.Add(this);
+            Id = _instances.Count;
+        }
+
+        public static List<Album> GetAll()
+        {
+            return _instances;
+        }
+
+        public static void ClearAll()
+        {
+            _instances.Clear();
         }
     
     }
