@@ -20,7 +20,7 @@ namespace MusicOrganizer.Tests
     Assert.AreEqual(typeof(Album), newAlbum.GetType());
     }
     [TestMethod]
-    public void GetName_ReturnsNameString_String()
+    public void GetInfo_ReturnsAlbumInfo_String()
     {
       string albumName = "Vacancy";
       string artist = "Four Seconds Ago";
